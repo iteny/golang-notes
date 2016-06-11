@@ -16,7 +16,7 @@ export GOROOT=/root/go
 export GOBIN=/root/golib/bin
 export GOPATH=/root/golib
 export PATH=$PATH:$GOROOT/bin:$GOPATH:$GOBIN
-* 第一条是go安装位置* 第二条是编译文件存放目录 * 第三条是go的工程目录，只需要修改前面2条
+* 第一条是go安装位置* 第二条是编译文件存放目录 * 第三条是go的工程目录，只需要修改前面3条
 ```
 ```centos
 source /etc/profile		//使得环境变量立即生效
