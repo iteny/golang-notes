@@ -4,3 +4,30 @@ Go基本类型
 	* 长度：1字节<br>
 	* 取值范围：true,false<br>
 	* 注意事项：不可以用数字代表true或false<br>
+* 整型：int/uint<br>
+	* 根据运行平台可能为32位或64位
+* 8位整型：int8/uint8<br>
+	* 长度：1字节<br>
+	* 取值范围：-128~127/0~255<br>
+* 字节型：byte(uint8别名)<br>
+* 16位整型：int16/uint16<br>
+	* 长度：2字节<br>
+	* 取值范围：-32768~32767/0~65535<br>
+* 32位整型：int32(rune)/uint32<br>
+	* 长度：4字节<br>
+	* 取值范围：-2^32/2~2^32/2-1/0~2^32-1<br>
+* 64位整型：int64/uint64<br>
+	* 长度：8字节<br>
+	* 取值范围：-2^64/2~2^64/2-1/0~2^64-1<br>
+* 浮点型：float32/float64<br>
+	* 长度：4/8字节<br>
+	* 小数位：精确到7/15小数位<br>
+* 复数：complex64/complex128<br>
+	* 长度：8/16字节<br>
+* 足够保存指针的32位或64位整数型：uintptr<br>
+* 其他值类型：<br>
+	* array,struct,string<br>
+* 引用类型：<br>
+	* slice,map,chan<br>
+* 接口类型：interface<br>
+* 函数类型：func<br>
