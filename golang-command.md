@@ -7,4 +7,6 @@ golang命令基础
 * go install:编译包文件并编译整个程序
 * go test:运行测试文件
 * go doc:查看文档
-
+* go env:查看go的环境变量
+* go:查看帮助信息
+* go version:查看go的版本信息
