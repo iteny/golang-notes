@@ -24,7 +24,7 @@ Go内置关键字(只有25个均为小写)
 * for
 * import
 * return
-* var
+* var<br>
 Go语言注释方法
 ======
 * //:单行注释
