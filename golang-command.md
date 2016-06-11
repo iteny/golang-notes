@@ -10,3 +10,4 @@ golang命令基础
 * go env:查看go的环境变量
 * go:查看帮助信息
 * go version:查看go的版本信息
+* godoc -http=:1111(这样你就在本地创建一个，本地的官网，没有墙的限制,你可以通过localhost:1111来翻墙访问)
