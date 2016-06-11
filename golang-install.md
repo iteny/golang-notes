@@ -11,3 +11,14 @@ tar -zxvf go1.6.2.linux-amd64.tar.gz 		//解压文件
 ```centos
 vim /etc/profile		//配置环境变量
 ```
+```centos
+export GOROOT=/root/go
+export PATH=$PATH:$GOROOT/bin
+//具体看你自己go安装的位置
+```
+```centos
+source /etc/profile		//使得环境变量立即生效
+```
+```centos
+go version		//如果环境变量配置成功，那么会显示当前的版本号
+```
