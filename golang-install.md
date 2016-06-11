@@ -13,12 +13,16 @@ vim /etc/profile		//配置环境变量
 ```
 ```centos
 export GOROOT=/root/go
-export PATH=$PATH:$GOROOT/bin
-//具体看你自己go安装的位置
+export GOPATH=/root/golib
+export PATH=$PATH:$GOROOT/bin:$GOPATH
+* 第一条是go安装位置 * 第二条是go的工程目录，只需要修改前面2条
 ```
 ```centos
 source /etc/profile		//使得环境变量立即生效
 ```
 ```centos
 go version		//如果环境变量配置成功，那么会显示当前的版本号
+```
+```centos
+go env		//你也可以查看，当前的环境变量设置
 ```
