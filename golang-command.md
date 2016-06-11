@@ -7,3 +7,4 @@ golang命令基础
 * go install:编译包文件并编译整个程序
 * go test:运行测试文件
 * go doc:查看文档
+
