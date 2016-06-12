@@ -202,5 +202,16 @@ func main(){
 8
 9
 OK
+//下面这个goto和上面的continue输出结果是相同的
+func main(){
+	for i:=0;i<10;i++{
+		for{
+			fmt.Println(i)
+			goto LABEL1
+		}
+		LABEL1:
+	}
+	fmt.Println("OK")
+}
 ```
 
