@@ -8,3 +8,19 @@ Go指针
 ======
 	在Go当中，++与--是作为语句而并不是作为表达式(所以不能放在变量右边，只能是单独的一行)
 
+指针演示
+=====
+```yanshi
+package main
+import(
+	"fmt"
+)
+func main() {
+	a := "string"
+	var p *string = &a
+	fmt.Println("a的地址为：",p)
+}
+//代码输出结果：
+a的地址为： 0xc82000a2d0
+```
+
