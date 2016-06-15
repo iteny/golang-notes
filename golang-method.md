@@ -72,3 +72,19 @@ func (a *A) Print() {
 }
 //输出结果：和class其实一样，方法是可以访问私有的字段,但是要注意字段名小写，只可以在当前包下
 123
+
+package main
+import (
+	"fmt"
+)
+type TZ int
+func (tz *TZ) Increase(num int) {
+	*tz += TZ(num)
+}
+func main() {
+	var a TZ
+	a.Increase(100)
+	fmt.Println(a)
+}
+//输出结果：修改底层的一个演示
+100
