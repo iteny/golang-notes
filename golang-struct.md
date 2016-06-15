@@ -222,4 +222,22 @@ func main() {
 }
 //输出结果：另外一种嵌入结构初始化的方法
 {{100} jacktwo 15} {{0}  0}
+
+package main
+import (
+	"fmt"
+)
+type A struct {
+	B
+	Name string
+}
+type B struct {
+	Name string
+}
+func main() {
+	a := A{Name: "jack", B: B{Name: "rose"}}
+	fmt.Println(a.Name, a.B.Name)
+}
+//输出结果：这个例子是讲，输出一个结构里面的同名字段，因为嵌入的结构的优先级比原本的低，所以需要这样输出
+jack rose
 ```
